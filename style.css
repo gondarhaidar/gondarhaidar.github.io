@@ -1,0 +1,44 @@
+.nav{
+	color: white;
+	position: absolute;
+	z-index: 1;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 10px;
+	padding-right: 30px;
+	justify-content: flex-end;
+}
+.nav a{
+	text-decoration: none;
+	color: #ddd;
+}
+.active{
+	border-bottom: 3px solid white;
+}
+.sampul{
+	height: 400px;
+	width: 100%;
+	filter: contrast(50%);
+	position: relative;
+}
+.wrap-sampul{
+	height: 200px;
+	overflow: hidden;
+}
+.profil{
+	width: 200px;
+	height: 200px;
+	border: 5px solid #bbb;
+	border-radius: 100%;
+	position: relative;
+	top: -110px;
+	left: 20px;
+}
+.deskrpsi{
+	position: relative;
+	top: -100px;
+}
+.skil{
+	position: relative;
+	top: -90px;
+}
