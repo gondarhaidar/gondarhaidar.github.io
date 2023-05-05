@@ -43,12 +43,19 @@
 	position: relative;
 	top: -90px;
 }
+.collap{
+	border: 1px solid;
+	padding: 4px;
+}
+.collap img{
+	height: 80px;
+}
 @media(max-width: 550px){
 	.profil{
 		width: 100px;
 		height: 100px;
 	}
 	.sampul{
-		height: 300px;
+		max-height: 150px;
 	}
 }
