@@ -45,17 +45,27 @@
 }
 .collap{
 	border: 1px solid;
+	border-left: none;
+	border-right: none;
 	padding: 4px;
 }
 .collap img{
 	height: 80px;
+	width: 90px;
+}
+.hide{
+	display: none;
 }
 @media(max-width: 550px){
 	.profil{
 		width: 100px;
 		height: 100px;
+		left: 20px;
 	}
 	.sampul{
 		max-height: 150px;
+	}
+	.deskrpsi{
+		left: 0px;
 	}
 }
