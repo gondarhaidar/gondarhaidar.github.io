@@ -50,21 +50,28 @@ setTimeout(()=>{
 }, 1500)
 
 /**********************/
-let nama = document.querySelector('.nama');
-let deskripsi = ["Hello everyone", "My Name's Gondar Ahmad Haidar", "I am a web developer"];
-let i = 0;
-setInterval(()=>{
-	i += 1;
-	if(i > 3){
-		i = 1;
-	}
-	nama.classList.add('animasinama')
-	nama.innerHTML = deskripsi[i-1];
-}, 3500)
+// let nama = document.querySelector('.nama');
+// let deskripsi = ["Hello everyone", "My Name's Gondar Ahmad Haidar", "I am a web developer"];
+// let i = 0;
+// setInterval(()=>{
+// 	i += 1;
+// 	if(i > 3){
+// 		i = 1;
+// 	}
+// 	nama.classList.add('animasinama')
+// 	nama.innerHTML = deskripsi[i-1];
+// }, 3500)
 
 /****** peringatan *******/
 document.querySelectorAll('nav ul li').forEach(e=>{
 	e.onclick = ()=>{
 		alert('Fitur ini sedang dalam perbaikan');
 	}
+})
+
+/******* sidebar ********/
+let tombol = document.querySelector('.tombol');
+let sidebar = document.querySelector('.sidebar');
+tombol.addEventListener('click', ()=>{
+	sidebar.classList.toggle('flex');
 })
