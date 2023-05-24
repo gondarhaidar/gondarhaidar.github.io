@@ -163,7 +163,7 @@ nav ul li{
 }
 @media(max-width: 600px){
 	html, body{
-		max-width: 99%;
+		max-width: 100%;
 		overflow-x: hidden;
 	}
 	nav ul{
