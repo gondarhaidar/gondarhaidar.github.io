@@ -39,13 +39,14 @@ setInterval(()=>{
 /******* animasi waktu *******/
 setTimeout(()=>{
 	waktu.forEach(e=>{
-		e.classList.remove('hide')
+		e.classList.add('mncl')
 	})
 	kaping.forEach(e=>{
-		e.classList.remove('hide')
+		e.classList.add('mncl')
 	})
 	p.forEach(e=>{
-		e.classList.remove('hide')
+		e.innerHTML = ':';
+		e.classList.add('mncl')
 	})
 }, 1500)
 
@@ -75,3 +76,15 @@ let sidebar = document.querySelector('.sidebar');
 tombol.addEventListener('click', ()=>{
 	sidebar.classList.toggle('flex');
 })
+
+/****** animasi navbar *******/
+let nav = document.querySelector('nav ul');
+window.onload = ()=>{
+	nav.classList.add('munculNav');
+}
+
+/****** animasi lanjut scrol ******/
+let lanjut = document.querySelector('.lanjut');
+setInterval(()=>{
+	lanjut.classList.remove('hide');
+}, 4000)
