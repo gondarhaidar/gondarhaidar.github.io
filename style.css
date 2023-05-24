@@ -147,7 +147,25 @@ nav ul li{
 		opacity: 0.8;
 	}
 }
+
+/******* home style *********/
+.home{
+	height: 80vh;
+	background-color: lightblue;
+	margin-top: 10px;
+	opacity: 0;
+	transform: translateY(30px);
+	transition: 2s;
+}
+.tampil{
+	transform: translateY(0);
+	opacity: 1;
+}
 @media(max-width: 600px){
+	html, body{
+		max-width: 99%;
+		overflow-x: hidden;
+	}
 	nav ul{
 		display: none;
 	}

@@ -88,3 +88,5 @@ let lanjut = document.querySelector('.lanjut');
 setInterval(()=>{
 	lanjut.classList.remove('hide');
 }, 4000)
+
+/****** animasi scroll home *********/
