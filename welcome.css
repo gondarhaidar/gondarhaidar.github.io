@@ -5,6 +5,7 @@
 html, body{
 	max-width: 100%;
 	overflow-x: hidden;
+	background-color: #eaeaea;
 }
 nav{
 	border: 1px solid;

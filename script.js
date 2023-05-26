@@ -89,4 +89,4 @@ setInterval(()=>{
 	lanjut.classList.remove('hide');
 }, 4000)
 
-/****** animasi scroll home *********/
+/****** animasi scroll profil *********/
