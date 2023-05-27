@@ -27,7 +27,11 @@ setInterval(()=>{
 	}else{
 		waktu[1].innerHTML = menit();
 	}	
-	waktu[0].innerHTML = jam();
+	if(jam()<10){
+		waktu[0].innerHTML = '0'+jam();
+	}else{
+		waktu[0].innerHTML = jam();
+	}
 	kaping[0].innerHTML = namahari[hari()-1] + ',';
 	kaping[1].innerHTML = tanggal();
 	kaping[2].innerHTML = namabulan[bulan()-1];
@@ -76,7 +80,6 @@ let sidebar = document.querySelector('.sidebar');
 tombol.addEventListener('click', ()=>{
 	sidebar.classList.toggle('flex');
 })
-
 /****** animasi navbar *******/
 let nav = document.querySelector('nav ul');
 window.onload = ()=>{
@@ -90,3 +93,16 @@ setInterval(()=>{
 }, 4000)
 
 /****** animasi scroll profil *********/
+let profil = document.getElementsByClassName('profil')[0];
+let bio = document.getElementsByClassName('bio')[0];
+let card = document.querySelectorAll('.card');
+
+window.onscroll = ()=>{
+	let tinggi = window.innerHeight;
+	let jarakProfil = profil.getBoundingClientRect().top;
+	if(jarakProfil < tinggi - 400){
+		profil.classList.add('tampilProfil');
+	}else{
+		profil.classList.remove('tampilProfil');
+	}
+}

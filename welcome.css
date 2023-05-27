@@ -25,6 +25,7 @@ nav ul{
 	border-bottom-left-radius: 5px;
 	transform: translateX(195px);
 	opacity: 0;
+	display: none;
 	transition: 2s;
 }
 .munculNav{

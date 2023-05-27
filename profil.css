@@ -1,9 +1,13 @@
 .profil{
-	max-width: 900px;
 	margin: 20px auto;
 	background-color: pink;
 	padding: 10px;
 	border-radius: 5px;
+	opacity: 0;
+	transition: 2s;
+}
+.tampilProfil{
+	opacity: 1;
 }
 .bio{
 	display: flex;
