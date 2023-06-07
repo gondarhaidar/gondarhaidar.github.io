@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html, body{
+	background-color: #ddd;
+	overflow-x: none;
+	height: 100%;
+}
+.container{
+	background-color: teal;
+	max-width: 900px;
+	margin: 2px auto;
+	height: 100%;
+
+}
+nav{
+	background-color: #324242;
+	box-shadow: 0px 1px 1px 1px black;
+}
+nav .nav{
+	max-width: 900px;
+	margin: 0px auto;
+	background-color: teal;
+	display: flex;
+	background-color: #324242;
+	justify-content: space-between;
+	color: white;
+	font-family: 'Oswald', sans-serif;
+	align-items: center;
+}
+nav span{
+	font-size: 30px;
+	color: white;
+} 
+ul{
+	display: flex;
+	align-items: center;
+	list-style: none;
+}
+ul li{
+	cursor: pointer;
+	margin-left: 10px;
+	color: #ccc;
+}
+ul li:hover{
+	color: white;
+}
+.garis{
+	display: none;
+}
+.profil{
+	background-color: teal;
+	padding: 10px;
+	border-radius: 5px;
+	transition: 2s;
+	height: 100vh;
+}
+.bio{
+	display: flex;
+	margin: auto;
+	padding: 5px;
+	align-items: center;
+}
+.bio div{
+	display: flex;
+	align-items: center;
+	margin-left: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 4px 1px black;
+	font-family: 'Oswald', sans-serif;
+	height: 100px;
+	font-size: 40px;
+	margin-top: 10px;
+}
+.profil .bio img{
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	border: 3px solid #ddd;
+}
+.talenta{
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+}
+.talenta .card{
+	background-color: #eaeaea;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	font-family: 'Oswald', sans-serif;
+	box-shadow: 1px 1px 3px 1px black;
+}
+.talenta svg{
+	width: 150px;
+	height: 150px;
+	margin-bottom: 10px;
+}
+.talenta span{
+	display: block;
+
+}
+@media(max-width: 900px){
+	nav .nav{
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+@media(max-width: 600px){
+	.nav ul{
+		display: none;
+	}
+	.garis{
+		display: flex;
+		flex-direction: column;
+		padding: 3px;
+	}
+	.garis span{
+		margin: 4px;
+		width: 35px;
+		height: 2px;
+		background-color: white;
+	}
+	.garis:hover{
+		border: 1px solid white;
+		border-radius: 10px;
+	}
+	.bio{
+		flex-direction: column;
+	}
+	.bio p{
+		margin-left: 0px;
+		margin-top: 10px;
+		font-family: 'Oswald', sans-serif;
+	}
+	.talenta{
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
+	.card{
+		margin-bottom: 10px;
+	}
+}
