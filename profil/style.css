@@ -1,36 +1,45 @@
 *{
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
 }
 html, body{
-	background-color: #ddd;
 	overflow-x: none;
 	height: 100%;
+	max-width: 100%;
 }
 .container{
-	background-color: teal;
+	background-color: #eaeaea;
 	max-width: 900px;
 	margin: 2px auto;
-	height: 100%;
-
+}
+.text-center{
+	text-align: center;
+}
+svg{
+	cursor: auto;
 }
 nav{
-	background-color: #324242;
+	background-color: teal;
+	padding: 5px;
 	box-shadow: 0px 1px 1px 1px black;
+	box-sizing: border-box;
 }
 nav .nav{
 	max-width: 900px;
 	margin: 0px auto;
 	background-color: teal;
 	display: flex;
-	background-color: #324242;
+	background-color: teal;
 	justify-content: space-between;
 	color: white;
 	font-family: 'Oswald', sans-serif;
 	align-items: center;
+	box-sizing: border-box;
 }
 nav span{
-	font-size: 30px;
+	font-size: 20px;
 	color: white;
 } 
 ul{
@@ -50,61 +59,57 @@ ul li:hover{
 	display: none;
 }
 .profil{
-	background-color: teal;
 	padding: 10px;
 	border-radius: 5px;
 	transition: 2s;
+	padding-bottom: 40px;
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 .bio{
 	display: flex;
 	margin: auto;
-	padding: 5px;
+	flex-direction: column;
 	align-items: center;
-}
-.bio div{
-	display: flex;
-	align-items: center;
-	margin-left: 10px;
-	padding: 10px;
-	border-radius: 10px;
-	box-shadow: 1px 1px 4px 1px black;
-	font-family: 'Oswald', sans-serif;
-	height: 100px;
-	font-size: 40px;
-	margin-top: 10px;
+	padding: 1px;
 }
 .profil .bio img{
 	width: 200px;
 	height: 200px;
 	border-radius: 100%;
-	border: 3px solid #ddd;
+	border: 3px solid #324242;
+	margin: 30px;
 }
-.talenta{
-	margin-top: 20px;
-	display: flex;
-	justify-content: center;
-	justify-content: space-around;
-}
-.talenta .card{
-	background-color: #eaeaea;
+.about{
+	margin: 30px;
+	padding: 10px;
 	display: flex;
 	flex-direction: column;
-	border-radius: 10px;
-	justify-content: space-between;
-	align-items: center;
+}
+.about h2{
+	text-align: center;
+}
+.navbar{
+	display: none;
+}
+.skils{
+	border: 1px solid;
 	padding: 10px;
-	font-family: 'Oswald', sans-serif;
-	box-shadow: 1px 1px 3px 1px black;
 }
-.talenta svg{
-	width: 150px;
-	height: 150px;
-	margin-bottom: 10px;
+.skils ul{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
+	justify-content: space-evenly;
 }
-.talenta span{
-	display: block;
-
+.skils svg{
+	margin: 0;
+}
+.skils ul li span{
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
 }
 @media(max-width: 900px){
 	nav .nav{
@@ -113,13 +118,16 @@ ul li:hover{
 	}
 }
 @media(max-width: 600px){
-	.nav ul{
-		display: none;
-	}
 	.garis{
 		display: flex;
 		flex-direction: column;
 		padding: 3px;
+	}
+	.menu{
+		display: none;
+	}
+	.garis ul{
+		border: 1px solid;
 	}
 	.garis span{
 		margin: 4px;
@@ -127,23 +135,33 @@ ul li:hover{
 		height: 2px;
 		background-color: white;
 	}
+	.navbar{
+		display: flex;
+		border: 1px solid black;
+		flex-direction: column;
+		background-color: #324242;
+		transform: translateX(300px);
+		border: 1px solid;
+		height: 100%;
+		position: fixed;
+		z-index: 2;
+		width: 60vh;
+		right: 0;
+		opacity: 0;
+		transition: 1s;
+	}
+	.muncul{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+	.navbar li{
+		margin: 10px;
+	}
 	.garis:hover{
 		border: 1px solid white;
 		border-radius: 10px;
 	}
-	.bio{
-		flex-direction: column;
-	}
-	.bio p{
-		margin-left: 0px;
-		margin-top: 10px;
-		font-family: 'Oswald', sans-serif;
-	}
-	.talenta{
-		flex-direction: column;
-		justify-content: space-evenly;
-	}
-	.card{
-		margin-bottom: 10px;
+	.about{
+		padding: 3px;
 	}
 }
