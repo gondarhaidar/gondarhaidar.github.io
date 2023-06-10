@@ -25,6 +25,8 @@ nav{
 	padding: 5px;
 	box-shadow: 0px 1px 1px 1px black;
 	box-sizing: border-box;
+	position: sticky;
+	top: 0;
 }
 nav .nav{
 	max-width: 900px;
@@ -49,7 +51,7 @@ ul{
 }
 ul li{
 	cursor: pointer;
-	margin-left: 10px;
+	margin-left: 15px;
 	color: #ccc;
 }
 ul li:hover{
@@ -67,6 +69,16 @@ ul li:hover{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+h1{
+	color: teal;
+	text-shadow: 1px 1px 1px black;
+}
+.profil span{
+	color: teal;
+}
+.profil p{
+	font-size: 14px;
 }
 .bio{
 	display: flex;
@@ -87,6 +99,7 @@ ul li:hover{
 	padding: 10px;
 	display: flex;
 	flex-direction: column;
+	height: 50vh;
 }
 .about h2{
 	text-align: center;
@@ -95,13 +108,20 @@ ul li:hover{
 	display: none;
 }
 .skils{
-	border: 1px solid;
 	padding: 10px;
 }
 .skils ul{
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
+	grid-template-columns: repeat(auto-fill, minmax(100px, 150px));
 	justify-content: space-evenly;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px 1px black;
+	background-color: white;
+	margin-top: 10px;
+}
+.skils li{
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 .skils svg{
 	margin: 0;
@@ -118,6 +138,13 @@ ul li:hover{
 	}
 }
 @media(max-width: 600px){
+	nav{
+		position: sticky;
+		top: 0;
+	}
+	.profil{
+		justify-content: flex-start;
+	}
 	.garis{
 		display: flex;
 		flex-direction: column;
@@ -145,7 +172,7 @@ ul li:hover{
 		height: 100%;
 		position: fixed;
 		z-index: 2;
-		width: 60vh;
+		width: 50vh;
 		right: 0;
 		opacity: 0;
 		transition: 1s;
