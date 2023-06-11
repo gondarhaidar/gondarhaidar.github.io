@@ -25,8 +25,10 @@ nav{
 	padding: 5px;
 	box-shadow: 0px 1px 1px 1px black;
 	box-sizing: border-box;
-	position: sticky;
+	position: fixed;
+	width: 100%;
 	top: 0;
+	z-index: 1;
 }
 nav .nav{
 	max-width: 900px;
@@ -109,6 +111,7 @@ h1{
 }
 .skils{
 	padding: 10px;
+	margin-bottom: 100px;
 }
 .skils ul{
 	display: grid;
@@ -131,6 +134,20 @@ h1{
 	font-size: 20px;
 	font-weight: bold;
 }
+.project{
+	height: 30vh;
+	border: 1px solid;
+	padding: 10px;
+}
+.hide{
+	opacity: 0;
+	transform: rotateX(90deg);
+	transition: 1.2s;
+}
+.muncul{
+	opacity: 1;
+	transform: rotateX(0deg);
+}
 @media(max-width: 900px){
 	nav .nav{
 		margin-left: 10px;
@@ -138,12 +155,9 @@ h1{
 	}
 }
 @media(max-width: 600px){
-	nav{
-		position: sticky;
-		top: 0;
-	}
 	.profil{
-		justify-content: flex-start;
+		justify-content: start;
+		padding: 5px;
 	}
 	.garis{
 		display: flex;
@@ -177,12 +191,16 @@ h1{
 		opacity: 0;
 		transition: 1s;
 	}
-	.muncul{
+	.open{
 		transform: translateX(0px);
 		opacity: 1;
 	}
 	.navbar li{
 		margin: 10px;
+	}
+	.navbar .svg{
+		position: absolute;
+		left: 0;
 	}
 	.garis:hover{
 		border: 1px solid white;
