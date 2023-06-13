@@ -112,6 +112,13 @@ h1{
 .skils{
 	padding: 10px;
 	margin-bottom: 100px;
+	opacity: 0;
+	transform: translateY(200px);
+	transition: 1.3s;
+}
+.satu{
+	transform: translateY(0);
+	opacity: 1;
 }
 .skils ul{
 	display: grid;
