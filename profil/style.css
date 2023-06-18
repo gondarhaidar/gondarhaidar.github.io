@@ -155,6 +155,9 @@ h1{
 	opacity: 1;
 	transform: rotateX(0deg);
 }
+.aktif{
+	color: white;
+}
 @media(max-width: 900px){
 	nav .nav{
 		margin-left: 10px;
